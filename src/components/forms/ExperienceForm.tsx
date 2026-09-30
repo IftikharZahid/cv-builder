@@ -77,27 +77,27 @@ export default function ExperienceForm() {
 
             {expandedId === exp.id && (
               <div className="p-3 border-t space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Job Title</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.position} onChange={(e) => handleChange(index, "position", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.position} onChange={(e) => handleChange(index, "position", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Company</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.company} onChange={(e) => handleChange(index, "company", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.company} onChange={(e) => handleChange(index, "company", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Location</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.location} onChange={(e) => handleChange(index, "location", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={exp.location} onChange={(e) => handleChange(index, "location", e.target.value)} />
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Start Date</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. Oct 2022" value={exp.startDate} onChange={(e) => handleChange(index, "startDate", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. Oct 2022" value={exp.startDate} onChange={(e) => handleChange(index, "startDate", e.target.value)} />
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">End Date</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. Present" value={exp.endDate} onChange={(e) => handleChange(index, "endDate", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. Present" value={exp.endDate} onChange={(e) => handleChange(index, "endDate", e.target.value)} />
                     </div>
                   </div>
                 </div>

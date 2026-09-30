@@ -77,18 +77,18 @@ export default function AwardsForm() {
             {expandedId === award.id && (
               <div className="p-3 border-t space-y-3">
                 <div className="space-y-3">
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Award Title</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Organization</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.organization || ""} onChange={(e) => handleChange(index, "organization", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.organization || ""} onChange={(e) => handleChange(index, "organization", e.target.value)} />
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Year</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={award.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
                     </div>
                   </div>
                   <div>

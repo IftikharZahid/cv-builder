@@ -46,48 +46,48 @@ export default function ProfileForm() {
         </div>
 
         {/* Basic Info */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-            <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.fullName} onChange={(e) => updateField("fullName", e.target.value)} />
+            <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.fullName} onChange={(e) => updateField("fullName", e.target.value)} />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Professional Title</label>
-            <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.designation} onChange={(e) => updateField("designation", e.target.value)} />
+            <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.designation} onChange={(e) => updateField("designation", e.target.value)} />
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Professional Summary</label>
-          <textarea rows={4} className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.summary} onChange={(e) => updateField("summary", e.target.value)} />
+          <textarea rows={4} className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={data.summary} onChange={(e) => updateField("summary", e.target.value)} />
         </div>
 
         <div className="pt-4 border-t mt-4">
           <h3 className="text-sm font-semibold text-gray-800 mb-3">Contact Information</h3>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><MapPin className="w-3 h-3"/> Address</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.address} onChange={(e) => updateField("address", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><MapPin className="w-3 h-3"/> Address</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.address} onChange={(e) => updateField("address", e.target.value)} />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><Phone className="w-3 h-3"/> Phone</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.phone} onChange={(e) => updateField("phone", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><Phone className="w-3 h-3"/> Phone</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.phone} onChange={(e) => updateField("phone", e.target.value)} />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><Mail className="w-3 h-3"/> Email</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.email} onChange={(e) => updateField("email", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><Mail className="w-3 h-3"/> Email</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.email} onChange={(e) => updateField("email", e.target.value)} />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><Globe className="w-3 h-3"/> Website</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.website} onChange={(e) => updateField("website", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><Globe className="w-3 h-3"/> Website</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.website} onChange={(e) => updateField("website", e.target.value)} />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><Link className="w-3 h-3"/> LinkedIn</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.linkedin} onChange={(e) => updateField("linkedin", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><Link className="w-3 h-3"/> LinkedIn</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.linkedin} onChange={(e) => updateField("linkedin", e.target.value)} />
             </div>
             <div>
-              <label className="block text-xs text-gray-600 mb-1 flex items-center gap-1"><Code className="w-3 h-3"/> GitHub</label>
-              <input className="w-full border rounded-md p-1.5 text-sm outline-none" value={data.github} onChange={(e) => updateField("github", e.target.value)} />
+              <label className="flex items-center gap-1 text-xs text-gray-600 mb-1"><Code className="w-3 h-3"/> GitHub</label>
+              <input className="w-full border rounded-md p-2 text-sm outline-none" value={data.github} onChange={(e) => updateField("github", e.target.value)} />
             </div>
           </div>
         </div>

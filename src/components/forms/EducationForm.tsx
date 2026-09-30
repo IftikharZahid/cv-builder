@@ -74,12 +74,12 @@ export default function EducationForm() {
 
             {expandedId === edu.id && (
               <div className="p-3 border-t space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Degree / Qualification</label>
                     <input
                       list={`degree-list-${edu.id}`}
-                      className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none"
+                      className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none"
                       value={edu.degree || ""}
                       onChange={(e) => handleChange(index, "degree", e.target.value)}
                       placeholder="e.g. B.Sc Computer Science"
@@ -100,20 +100,20 @@ export default function EducationForm() {
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Institute Name</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={edu.institute || ""} onChange={(e) => handleChange(index, "institute", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={edu.institute || ""} onChange={(e) => handleChange(index, "institute", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Location</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={edu.location || ""} onChange={(e) => handleChange(index, "location", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={edu.location || ""} onChange={(e) => handleChange(index, "location", e.target.value)} />
                   </div>
                   <div className="grid grid-cols-2 gap-2">
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Graduation Year</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. 2024" value={edu.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. 2024" value={edu.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
                     </div>
                     <div>
                       <label className="block text-xs font-medium text-gray-700 mb-1">Result / GPA</label>
-                      <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. 3.8 GPA" value={edu.result || ""} onChange={(e) => handleChange(index, "result", e.target.value)} />
+                      <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" placeholder="e.g. 3.8 GPA" value={edu.result || ""} onChange={(e) => handleChange(index, "result", e.target.value)} />
                     </div>
                   </div>
                 </div>

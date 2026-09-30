@@ -71,15 +71,15 @@ export default function LanguagesForm() {
 
             {expandedId === lang.id && (
               <div className="p-3 border-t space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Language</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={lang.name || ""} onChange={(e) => handleChange(index, "name", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={lang.name || ""} onChange={(e) => handleChange(index, "name", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Proficiency</label>
                     <select
-                      className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none bg-white"
+                      className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none bg-white"
                       value={lang.proficiency || ""}
                       onChange={(e) => handleChange(index, "proficiency", e.target.value)}
                     >

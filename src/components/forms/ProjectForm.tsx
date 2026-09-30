@@ -80,22 +80,22 @@ export default function ProjectForm() {
 
             {expandedId === proj.id && (
               <div className="p-3 border-t space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Project Title</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Organization / Client</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.company || ""} onChange={(e) => handleChange(index, "company", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.company || ""} onChange={(e) => handleChange(index, "company", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Project Link / Website</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.website || ""} onChange={(e) => handleChange(index, "website", e.target.value)} placeholder="https://" />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.website || ""} onChange={(e) => handleChange(index, "website", e.target.value)} placeholder="https://" />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Duration</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.duration || ""} onChange={(e) => handleChange(index, "duration", e.target.value)} placeholder="e.g. Jan 2023 - Mar 2023" />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={proj.duration || ""} onChange={(e) => handleChange(index, "duration", e.target.value)} placeholder="e.g. Jan 2023 - Mar 2023" />
                   </div>
                 </div>
                 <div>

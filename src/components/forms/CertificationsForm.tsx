@@ -77,22 +77,22 @@ export default function CertificationsForm() {
 
             {expandedId === cert.id && (
               <div className="p-3 border-t space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Certification Title</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.title || ""} onChange={(e) => handleChange(index, "title", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Provider</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.provider || ""} onChange={(e) => handleChange(index, "provider", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.provider || ""} onChange={(e) => handleChange(index, "provider", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">Year</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.year || ""} onChange={(e) => handleChange(index, "year", e.target.value)} />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-700 mb-1">URL (Optional)</label>
-                    <input className="w-full border rounded-md p-1.5 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.url || ""} onChange={(e) => handleChange(index, "url", e.target.value)} />
+                    <input className="w-full border rounded-md p-2 text-sm focus:ring-1 focus:ring-cv-red outline-none" value={cert.url || ""} onChange={(e) => handleChange(index, "url", e.target.value)} />
                   </div>
                 </div>
                 <div className="flex justify-end border-t pt-4 mt-4">
